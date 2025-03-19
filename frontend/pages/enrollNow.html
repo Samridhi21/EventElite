@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../css/enrollNow.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register for <span id="eventTitle"></span></h2>
+        <p><strong>Date:</strong> <span id="eventDate"></span></p>
+        <p><strong>Time:</strong> <span id="eventTime"></span></p>
+        <p><strong>Venue:</strong> <span id="eventVenue"></span></p>
+        <p><strong>Fee:</strong> ₹<span id="eventFee"></span></p>
+
+        <form id="registrationForm">
+            <label for="studentName">Your Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" required>
+
+            <label for="participation">Do you want to participate?</label>
+    <select id="participation">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="paymentStatus">Payment Status:</label>
+<select id="paymentStatus">
+    <option value="paid">Paid</option>
+    <option value="pending">Pending</option>
+</select>
+
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="../js/enrollNow.js"></script>
+</body>
+</html>
