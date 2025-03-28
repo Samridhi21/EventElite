@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../css/adminHome.css">
+    
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard </h2>
+        <a href="register.html">Registration</a>
+        <a href="../pages/event.html">Add Event</a>
+        <a href="../pages/manageEvents.html">Manage Events</a>
+        <a href="../pages/registeredStudents.html">Registered Students</a>
+        <a href="../pages/pastEvents.html">Past Events</a>
+        <a href="manageUsers.html">Faculty </a>
+        <button class="logout" id="logout">Logout</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome, <span id="adminName"></span>!</h1>
+        <p>Manage events, users, and feedback from here.</p>
+
+        <div class="dashboard">
+            <div class="card">
+                <h3>Total Events</h3>
+                <p id="totalEvents">0</p>
+            </div>
+            <div class="card">
+                <h3>Registered Students</h3>
+                <p id="totalUsers">0</p>
+            </div>
+            <div class="card">
+                <h3>Pending Payments</h3>
+                <p id="pendingPayments">0</p>
+            </div>
+            <div class="card">
+                <h3>Past Events</h3>
+                <p id="pastEventsCount">0</p>
+            </div>
+        </div>
+        <div id="eventsContainer"></div>
+    </div>
+
+   <script src="../js/adminHome.js"></script>
+
+</body>
+
+</html>

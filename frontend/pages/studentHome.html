@@ -1,0 +1,45 @@
+<!-- studentHome.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../css/studentHome.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Student Dashboard</h2>
+        <div class="profile">
+            <a href="../pages/studentDashboard.html" class="profile-link">View Profile</a>
+        </div>
+        <a href="../pages/upcomingEvents.html">Upcoming Events</a>
+        <a href="../pages/myRegisterEvents.html" >My Registered Events</a>
+        <!-- <a href="../pages/eventRequest.html">Create Event Request</a> -->
+        <button class="logout" id="logout">Logout</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome, <span id="studentName">Student</span>!</h1>
+        <p>View and enroll in events or request to create your own event.</p>
+
+        <div class="dashboard">
+            <div class="card">
+                <h3>Total Events</h3>
+                <p id="totalEvents">0</p>
+            </div>
+            <div class="card">
+                <h3>My Enrolled Events</h3>
+                <p id="myTotalEvents">0</p>
+            </div>
+            
+        </div>
+        <div id="eventsContainer"></div>
+    </div>
+
+    <script src="../js/studentHome.js"></script>
+</body>
+</html>

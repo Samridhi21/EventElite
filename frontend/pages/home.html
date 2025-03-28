@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="top-logo">
+      <img src="../assets/screen.jpg">
+      <a href="#">Event Elite</a>
+     </div>
+    <div>
+      <a href="https://www.facebook.com/davjalandhar.in/"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/davjalandhar_in"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/davjalandhar.in/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <div class="logo">
+        <img src="../assets/dav1.png" alt="DAV College Logo">
+      </div>
+      <div class="text">
+        <span class="davimg">DAV</span>
+        <span class="collegeimg">COLLEGE</span>
+        <span class="jalandharimg">JALANDHAR</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active"><i class="fas fa-home fa-sm"></i> Home</a></li>
+      <li><a href="../pages/about.html"><i class="fas fa-info-circle fa-sm"></i> About</a></li>
+      <li><a href="../pages/login.html"><i class="fas fa-sign-in-alt fa-sm"></i> Login</a></li>
+      <li><a href="../pages/upcomingEvents.html"><i class="fas fa-calendar-alt fa-sm"></i> Upcoming Events</a></li>
+      <li><a href="../pages/FlashbachEvents.html"><i class="fas fa-history fa-sm"></i> Flashback Events</a></li>
+    </ul>
+
+    <div class="icons">
+      <i class="fa fa-search search-icon"></i>
+    </div>
+
+
+    <div class="upcoming-events-container">
+      <div id="upcomingEvent" class="upcoming-event-text">Loading Upcoming Events...</div>
+    </div>
+  </nav>
+
+
+
+  <header class="banner">
+    <img src="../assets/dav.jpg" alt="DAV College Jalandhar">
+    <div class="overlay">
+      <p class="tagline">Celebrating 106 years of excellence</p>
+      <div class="title-box">
+        <h1><span class="bold">DAV</span> College</h1>
+      </div>
+    </div>
+  </header>
+  <!-- Event Categories -->
+  <section class="categories">
+    <h2>Event Categories</h2>
+    <div class="category-list">
+      <div class="category">
+        <i class="fas fa-laptop-code"></i>
+        <h4>Workshops</h4>
+      </div>
+      <div class="category">
+        <i class="fas fa-microphone-alt"></i>
+        <h4>Seminars</h4>
+      </div>
+      <div class="category">
+        <i class="fas fa-theater-masks"></i>
+        <h4>Cultural Fests</h4>
+      </div>
+      <div class="category">
+        <i class="fas fa-running"></i>
+        <h4>Sports Events</h4>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="../assets/dav1.png" alt="DAV College Logo" class="footer-logo">
+      <h2>
+        <span class="dav">DAV</span> <span class="college">COLLEGE</span> <span class="jalandhar">JALANDHAR</span>
+      </h2>
+      <p class="address">Mahatma Hans Raj Marg<br>GT Road, Jalandhar. 144008</p>
+      <p class="contact">
+        +91-181-2255641,42,43 <br>
+        <a href="mailto:principal@davjalandhar.com">principal@davjalandhar.com</a>
+      </p>
+      <hr class="footer-line">
+    </div>
+    <p class="copyright">© 2025 DAV College Jalandhar. All Rights Reserved.</p>
+  </footer>
+
+
+
+
+  <script src="../js/main.js"></script>
+  <script src="../js/event.js"></script>
+  <script src="../js/upcomingEvents.js"></script>
+</body>
+
+</html>

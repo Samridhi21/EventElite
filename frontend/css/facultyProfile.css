@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    /* background: white; */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Profile Flexbox */
+.profile-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Profile Item */
+.profile-item {
+    background: #f4f4f4;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+/* Logout Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #172b4d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1a4e9b;
+}

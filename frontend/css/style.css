@@ -1,0 +1,420 @@
+/* Navbar styling */
+.top-bar {
+  background-color: #16284c; /* Dark blue background */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.top-logo {
+  display: flex;
+  align-items: center;
+}
+
+.top-logo img {
+  height: 40px;
+  width: 70px;
+  margin-right: 0px;
+}
+
+.top-logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Left side logo */
+.top-bar a:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* Social media icons */
+.top-bar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/* Hover effect */
+.top-bar a:hover {
+  color: #35b104;/* Slight color change on hover */
+}
+
+/* <!-- Navbar --> */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0px;
+  position: fixed;
+  top: 50px;  
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  height: 140px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 1rem;
+  gap: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a2d54;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Green underline effect on hover */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: green;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Search icon */
+.icons .search-icon {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+/* Event Categories */
+.categories {
+  text-align: center;
+  padding: 50px;
+  background: #eee;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+}
+
+.category i {
+  font-size: 30px;
+  color: #16284c;
+}
+
+.category h4 {
+  margin-top: 10px;
+}
+
+/* Hover Effect */
+.category:hover {
+  background: #16284c;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.category:hover i {
+  color: white;
+}
+
+.category:hover h4 {
+  color: white;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #16284c;
+  color: white;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .red {
+  color: red;
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  /* Ensures the image covers the whole section */
+  position: absolute;
+  top: 0;
+  left: o;
+  z-index: -1;
+  opacity: 0.80;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: large;
+}
+
+.tagline {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 42px;
+  color: #1b2c57;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overlay {
+      top: 10%;
+      left: 5%;
+  }
+
+  .tagline {
+      font-size: 18px;
+  }
+
+  h1 {
+      font-size: 32px;
+  }
+}
+.footer {
+  background-color: #16284c; /* Updated Dark Background */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  max-width: 400px;
+  margin: auto;
+}
+
+.footer-logo {
+  width: 40px; /* Adjust Logo Size */
+  margin-bottom: 10px;
+}
+
+.footer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.dav {
+  color: #fff;
+  font-weight: bold;
+}
+
+.college {
+  color: white;
+  font-weight: bold;
+}
+
+.jalandhar {
+  color:white;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.address {
+  font-weight: 400;
+  color: #bbb;
+}
+
+.contact {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-line {
+  width: 80%;
+  border: 1px solid #2ecc71; /* Green Line */
+  margin: 15px auto;
+}
+/* Navbar Logo */
+.davlogo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px; /* Adjust size as needed */
+  width:auto;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* marquee tag */
+.upcoming-events-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  /* position: relative; */
+}
+
+.upcoming-event-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a2d54; 
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+marquee {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a2d54; 
+}
+
+@keyframes marquee {
+  from {
+      right: -100%;
+  }
+  to {
+      right: 100%;
+      transform: translateX(-200%);
+  }
+}
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width:45px; /* Adjust the logo size */
+}
+
+.text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.davimg {
+  color: #1d3557; /* Dark blue color */
+}
+
+.collegeimg{
+  color: #000; /* Black */
+}
+
+.jalandharimg {
+  color: #d90429; /* Red */
+}
+
+/* @keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+} */
+

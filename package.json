@@ -1,0 +1,19 @@
+{
+  "name": "eventelite",
+  "version": "1.0.0",
+  "description": "This website is about events",
+  "license": "ISC",
+  "author": "samridhi",
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "router": "^2.1.0"
+  }
+}
