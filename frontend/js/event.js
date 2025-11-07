@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     showMessage("❌ " + data.error, "error");
                 } else {
                     showMessage("✅ Event Created Successfully!", "success");
+                    alert("✅ Event Created Succesfully!");
 
                     eventForm.reset();
                     fetchEvents(); 
