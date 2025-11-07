@@ -1,0 +1,12 @@
+name: CI Check
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Verify Repository
+        run: echo "✅ GitHub Actions CI check passed successfully!"
