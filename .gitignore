@@ -1,26 +1,6 @@
-# Environment files
 .env
-
-# Node modules
 node_modules/
-
-# System files
-.DS_Store
-
-# Uploaded files
 uploads/
-
-# IDE configs
 .vscode/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Temporary folders
-temp/
-dist/
-
-# Database or local files
+.DS_Store
 MySQL-Local.session.sql
